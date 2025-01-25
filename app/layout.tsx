@@ -49,12 +49,9 @@ export default function RootLayout({children}:RootLayoutProps) {
   return (
     <html lang="en">
       <body className={`antialiased`}>
-      <div className="text-white bg-black">
         <Header />
         {children}
         <Footer />
-      </div>
-        
       </body>
     </html>
   );
