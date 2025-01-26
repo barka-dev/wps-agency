@@ -22,7 +22,7 @@ const Contact = () => {
                <h2
                  className="max-w-[260px] text-[35px] font-semibold leading-[1.14] text-dark dark:text-white"
                >
-                 Let's talk about your problem.
+                 Let{`'`}s talk about your problem.
                </h2>
              </div>
              <div className="mb-12 flex flex-wrap justify-between lg:mb-0">
@@ -49,7 +49,7 @@ const Contact = () => {
                      Our Location
                    </h5>
                    <p className="text-base text-body-color dark:text-dark-6">
-                     401 Broadway, 24th Floor, Orchard Cloud View, London
+                     Casablanca, Morocco
                    </p>
                  </div>
                </div>
@@ -73,10 +73,10 @@ const Contact = () => {
                      How Can We Help?
                    </h5>
                    <p className="text-base text-body-color dark:text-dark-6">
-                     info@yourdomain.com
+                     info@webpacksolution.com
                    </p>
                    <p className="mt-1 text-base text-body-color dark:text-dark-6">
-                     contact@yourdomain.com
+                     contact@webpacksolution.com
                    </p>
                  </div>
                </div>
@@ -130,7 +130,7 @@ const Contact = () => {
                  <input
                    type="text"
                    name="phone"
-                   placeholder="+885 1254 5211 552"
+                   placeholder="+212 123 456 789"
                    className="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
                  />
                </div>
@@ -142,7 +142,7 @@ const Contact = () => {
                  >
                  <textarea
                    name="message"
-                   rows="1"
+                   rows={2}
                    placeholder="type your message here"
                    className="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
                  ></textarea>

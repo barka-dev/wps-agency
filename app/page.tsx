@@ -1,10 +1,6 @@
 "use client"
 import { useEffect } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import CounterSection from "./components/CounterSection";
-import TeamMemberCard from "./components/TeamMemberCard";
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 import 'swiper/css';
 import Hero from "./components/Hero";
 import Services from "./components/Services";
@@ -13,6 +9,8 @@ import CTA from "./components/CTA";
 import Teams from "./components/Teams";
 import Contact from "./components/Contact";
 import Storytelling from "./components/Storytelling";
+import Testimonial from "./components/Testimonial";
+
 
 
 const Home = () => {
@@ -80,6 +78,7 @@ const Home = () => {
         <Teams/>
         <Storytelling/>
         <CTA/>
+        <Testimonial/>
         <Contact/>
 
         {/* ====== Back To Top Start */}

@@ -3,7 +3,7 @@ import React from 'react'
 const Storytelling = () => {
   return (
     <section
-      id="pricing"
+      id="mission"
       className="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]"
     >
       <div className="container mx-auto">
@@ -30,14 +30,14 @@ const Storytelling = () => {
               className="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14 h-[430px]"
             >
               <span
-                className="mb-5 block text-xl font-medium text-primary"
+                className="mb-5 block text-xl font-semibold text-primary"
               >
                 It all started with a challenge.
               </span>
               <div className="mb-[50px]">
                 <div className="flex flex-col gap-[14px]">
                   <p className="text-base text-body-color dark:text-dark-6">
-                  Many businesses face the struggle of managing complex tasks manually, which slows down growth and hinders potential. When we began working with our first clients, they were overwhelmed by inefficiencies—managing multiple processes across departments without a unified system.
+                  A small business struggled to streamline its operations, relying on manual processes for tasks like client follow-ups, inventory management, and sales tracking. This inefficiency was affecting their growth and productivity.
                   </p>
                 </div>
               </div>
@@ -45,17 +45,17 @@ const Storytelling = () => {
           </div>
           <div className="w-full px-4 md:w-1/2 lg:w-1/3">
             <div
-              className="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14 h-[430px]"
+              className="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14 h-[500px]"
             >
               <span
-                className="mb-5 block text-xl font-medium text-primary"
+                className="mb-5 block text-xl font-semibold text-primary"
               >
                 Then we stepped in.
               </span>
               <div className="mb-[50px]">
                 <div className="flex flex-col gap-[14px]">
                   <p className="text-base text-body-color dark:text-dark-6">
-                  We didn’t just create solutions; we created transformations. We worked closely with each client, understanding their unique challenges and goals. Our team of developers and digital marketers crafted tailored tools, designed websites, and automated manual processes that empowered these businesses to operate faster, smarter, and more effectively.
+                  At <b>WebpackSolution</b>, we developed a custom web app solution that automated key manual tasks, including client communication and sales tracking. By leveraging advanced digital marketing strategies, we helped the client boost their online presence and target a larger audience effectively. Additionally, we integrated real-time inventory management and task automation features into the app, making operations faster and more efficient.
                   </p>
                 </div>
               </div>
@@ -66,14 +66,14 @@ const Storytelling = () => {
               className="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14 h-[430px]"
             >
               <span
-                className="mb-5 block text-xl font-medium text-primary"
+                className="mb-5 block text-xl font-semibold text-primary"
               >
                 The outcome?
               </span>
               <div className="mb-[50px]">
                 <div className="flex flex-col gap-[14px]">
                   <p className="text-base text-body-color dark:text-dark-6">
-                  Businesses that once struggled to keep up with their competitors now experienced accelerated growth. With the tools we provided, they cut down operational costs, improved customer interactions, and gained a competitive edge in the digital world. Success wasn’t just an outcome—it was a journey, and we were with them every step of the way.
+                  The solution led to a <b>40% reduction in manual labor</b> and a <b>25% increase in sales</b> within the first three months of implementation. The client’s online visibility grew significantly, with a <b>50% increase in website traffic</b>, resulting in more qualified leads and a stronger brand presence in their market.
                   </p>
                 </div>
               </div>

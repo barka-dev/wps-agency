@@ -1,9 +1,13 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import 'swiper/css';
+import 'swiper/css/bundle';
+import 'animate.css';
 import "./globals.css";
 import { ReactNode } from "react";
 
 export const metadata = {
+  metadataBase: new URL('https://your-domain.com'),
   title: {
     default: "WebPackSolution",
     template: "%s | WebPackSolution"
@@ -47,7 +51,7 @@ type RootLayoutProps = {
 
 export default function RootLayout({children}:RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={`antialiased`}>
         <Header />
         {children}
