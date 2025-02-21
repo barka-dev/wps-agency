@@ -12,6 +12,9 @@ export const metadata = {
     default: "WebPackSolution",
     template: "%s | WebPackSolution"
   },
+  icons: {
+    icon: "/images/favicon.svg",
+  },
   description: "Your default site description",
   keywords: ["Next.js", "React", "JavaScript"],
   authors: [{ name: "Your Name" }],
