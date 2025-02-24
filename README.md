@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Play - Free Tailwind CSS Template for Startup, Apps and SaaS
 
-## Getting Started
+Play is an open-source and free Tailwind CSS template co-created by TailGrids and UIdeck. This template specially crafted for SaaS, startup, business and software website.
+Play crafted in a way that you can use with almost all sort of web project. This is Tailwind CSS template built using [TailGrids](https://tailgrids.com/) components.
 
-First, run the development server:
+### This template crafted using 🥞 [TailGrids](https://tailgrids.com/) UI components
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### [🚀 View Demo](https://play-tailwind.tailgrids.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### [⬇️ Download Now](https://links.tailgrids.com/play-download)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[![play-tailwind](https://cdn.tailgrids.com/play-tailwind.jpg)](https://play-tailwind.tailgrids.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📃 License
 
-## Learn More
+Play is an open-source template, you can use it with your personal or commercial projects without any attribution or backlink.
 
-To learn more about Next.js, take a look at the following resources:
+## 💙 Support
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can always support this project by [Starring🌟 This Repository](https://github.com/tailgrids/play-tailwind)
+and sharing with friends. Also open an issue if you find bug or feel free to contribute by pull requests after fixing any issue or adding more values.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Update Logs: 2.0 - Nov 2023
+- Design refresh
+- New marketing section
+- Dark mode support
+- Code and performance optimization
+- Updated dependencies
