@@ -67,39 +67,129 @@ const testimonialSwiper = new Swiper(".testimonial-carousel", {
   },
 });
 
-const sendEmail = (emailParams)=>{
-  emailjs.send('service_hws7yyd', 'template_gv23oky', emailParams, 'I0kTlTgMs-3h-or2r')
-  .then(
-      ()=>{
-          console.log('SUCCESS!');
-          setEmailStatus('success');
-      },
-      (error)=>{
-          console.log('FAILED...', error.text);
-          setEmailStatus('failed');
-      },
-  );
-}
+// const sendEmail = (emailParams)=>{
+//   emailjs.send('service_hws7yyd', 'template_gv23oky', emailParams, 'I0kTlTgMs-3h-or2r')
+//   .then(
+//       ()=>{
+//           console.log('SUCCESS!');
+//           alert("Email sent successfully");
+//       },
+//       (error)=>{
+//           console.log('FAILED...', error.text);
+//           alert("Email sending failed");
+//       },
+//   );
+// }
 
-const getSubmittedData = ()=>{
+const sendEmail = (emailParams) => {
+  emailjs.send('service_hws7yyd', 'template_gv23oky', emailParams, 'I0kTlTgMs-3h-or2r')
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        Swal.fire({
+          icon: 'success',
+          title: 'Email Sent!',
+          text: 'Your email has been sent successfully.',
+          timer: 3000,
+          showConfirmButton: false,
+        });
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Email sending failed. Please try again.',
+        });
+      },
+    );
+};
+
+
+// const getSubmittedData = ()=>{
+//   const form = document.querySelector("#contact-form");
+//   const form_data = new FormData(form);
+
+//   const emailParams = {
+//       from_fullName: form_data.get("fullName"),
+//       from_email: form_data.get("email"),
+//       from_phone: form_data.get("phone"),
+//       message: form_data.get("message"),
+//   }
+//   return emailParams;
+// }
+
+const getSubmittedData = () => {
   const form = document.querySelector("#contact-form");
   const form_data = new FormData(form);
 
-  const emailParams = {
-      from_fullName: form_data.get("fullName"),
-      from_email: form_data.get("email"),
-      from_phone: form_data.get("phone"),
-      message: form_data.get("message"),
+  // Get form values
+  const fullName = form_data.get("fullName").trim();
+  const email = form_data.get("email").trim();
+  const phone = form_data.get("phone").trim();
+  const message = form_data.get("message").trim();
+
+  // Validation
+  if (!fullName || !email || !phone || !message) {
+    Swal.fire({
+      icon: 'warning',
+      title: 'Missing Fields',
+      text: 'Please fill in all the fields.',
+    });
+    return null;
   }
+
+  if (!validateEmail(email)) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Invalid Email',
+      text: 'Please enter a valid email address.',
+    });
+    return null;
+  }
+
+  if (!validatePhone(phone)) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Invalid Phone Number',
+      text: 'Please enter a valid phone number.',
+    });
+    return null;
+  }
+
+  // Return the validated data
+  const emailParams = {
+    from_fullName: fullName,
+    from_email: email,
+    from_phone: phone,
+    message: message,
+  };
+
   return emailParams;
-}
+};
+
+// Email validation function
+const validateEmail = (email) => {
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+};
+
+// Phone validation function (basic example)
+const validatePhone = (phone) => {
+  const phoneRegex = /^[0-9]{10,15}$/; // Adjust the pattern as needed
+  return phoneRegex.test(phone);
+};
+
 
 const contact_form = document.querySelector("#contact-form");
 
 const submitForm = (e)=>{
   e.preventDefault();
   const emailParams = getSubmittedData();
-  sendEmail(emailParams);
+  if (emailParams) {
+    sendEmail(emailParams);
+    contact_form.reset();
+  } 
 }
 
 contact_form.addEventListener("submit", submitForm);

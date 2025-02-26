@@ -1399,20 +1399,20 @@ body {
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgb(55 88 249 / var(--tw-bg-opacity));
+  background-color: rgb(151 7 71 / var(--tw-bg-opacity));
 }
 
 .bg-primary\/5{
-  background-color: rgb(55 88 249 / 0.05);
+  background-color: rgb(151 7 71 / 0.05);
 }
 
 .bg-primary\/\[0\.08\]{
-  background-color: rgb(55 88 249 / 0.08);
+  background-color: rgb(151 7 71 / 0.08);
 }
 
 .bg-secondary{
   --tw-bg-opacity: 1;
-  background-color: rgb(19 194 150 / var(--tw-bg-opacity));
+  background-color: rgb(22 147 185 / var(--tw-bg-opacity));
 }
 
 .bg-stroke{
@@ -1854,7 +1854,7 @@ body {
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(22 147 185 / var(--tw-text-opacity));
 }
 
 .text-white{
@@ -2017,7 +2017,7 @@ body {
 
 .sticky #navbarCollapse li > a:hover{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(22 147 185 / var(--tw-text-opacity));
   opacity: 1;
 }
 
@@ -2028,7 +2028,7 @@ body {
 
 :is(.dark .sticky #navbarCollapse li > a:hover){
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(22 147 185 / var(--tw-text-opacity));
 }
 
 #navbarCollapse li .ud-menu-scroll.active{
@@ -2037,7 +2037,7 @@ body {
 
 .sticky #navbarCollapse li .ud-menu-scroll.active{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(22 147 185 / var(--tw-text-opacity));
   opacity: 1;
 }
 
@@ -2048,7 +2048,7 @@ body {
 
 .sticky .loginBtn:hover{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(151 7 71 / var(--tw-text-opacity));
   opacity: 1;
 }
 
@@ -2193,12 +2193,12 @@ body {
 
 .hover\:bg-blue-dark:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(27 68 200 / var(--tw-bg-opacity));
+  background-color: rgb(22 147 185 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-dark:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(17 25 40 / var(--tw-bg-opacity));
+  background-color: rgb(22 147 185 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-2:hover{
@@ -2236,7 +2236,7 @@ body {
 
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(22 147 185 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
@@ -2297,7 +2297,7 @@ body {
 
 .group:hover .group-hover\:text-primary{
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(22 147 185 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-white{
@@ -2374,7 +2374,7 @@ body {
 
 :is(.dark .dark\:hover\:text-primary:hover){
   --tw-text-opacity: 1;
-  color: rgb(55 88 249 / var(--tw-text-opacity));
+  color: rgb(22 147 185 / var(--tw-text-opacity));
 }
 
 :is(.dark .dark\:hover\:text-white:hover){
