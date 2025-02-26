@@ -66,3 +66,40 @@ const testimonialSwiper = new Swiper(".testimonial-carousel", {
     },
   },
 });
+
+const sendEmail = (emailParams)=>{
+  emailjs.send('service_hws7yyd', 'template_gv23oky', emailParams, 'I0kTlTgMs-3h-or2r')
+  .then(
+      ()=>{
+          console.log('SUCCESS!');
+          setEmailStatus('success');
+      },
+      (error)=>{
+          console.log('FAILED...', error.text);
+          setEmailStatus('failed');
+      },
+  );
+}
+
+const getSubmittedData = ()=>{
+  const form = document.querySelector("#contact-form");
+  const form_data = new FormData(form);
+
+  const emailParams = {
+      from_fullName: form_data.get("fullName"),
+      from_email: form_data.get("email"),
+      from_phone: form_data.get("phone"),
+      message: form_data.get("message"),
+  }
+  return emailParams;
+}
+
+const contact_form = document.querySelector("#contact-form");
+
+const submitForm = (e)=>{
+  e.preventDefault();
+  const emailParams = getSubmittedData();
+  sendEmail(emailParams);
+}
+
+contact_form.addEventListener("submit", submitForm);
